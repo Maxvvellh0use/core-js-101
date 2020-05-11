@@ -32,7 +32,7 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
-
+  throw new Error('Not implemented');
 }
 
 
@@ -78,7 +78,8 @@ function getRegexForPitSpot() {
  *   'PASSW0RD'.match(validator)  => false
  *   'Pa55'.match(validator) => false
  */
-function getPasswordValidator(minLength) {
+function getPasswordValidator(/* minLength */) {
+  throw new Error('Not implemented');
 }
 
 

@@ -63,7 +63,7 @@ function getPowerFunction(exponent) {
  *   getPolynom()      => null
  */
 function getPolynom() {
-
+  throw new Error('Not implemented');
 }
 
 
@@ -82,11 +82,11 @@ function getPolynom() {
  *   memoizer() => the same random number  (next run, returns the previous cached result)
  */
 function memoize(func) {
-  const cache = {}
-  return (...arguments) => {
-    const key = JSON.stringify(arguments);
+  const cache = {};
+  return (...args) => {
+    const key = JSON.stringify(args);
     if (!(key in cache)) {
-      const result = func.apply(0, arguments);
+      const result = func.apply(0, args);
       cache[key] = result;
     }
     return cache[key];
